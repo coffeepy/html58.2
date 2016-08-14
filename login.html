@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="login.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="login-home" >
+      <h1>MySelfie Tech</h1>
+      <div id="choose">
+        <button type="button" name="login" id="login-btn">Login</button>
+        <button type="button" name="button" id="signup-btn">SignUp</button>
+      </div>
+      <div id="sign-up" class="hidden">
+        <input type="text" name="name" placeholder="name" id="name">
+        <input type="email" name="email" placeholder="email" id="email">
+        <input type="password" name="password" placeholder="password" id="pw">
+        <button type="button" name="signup" id="register-btn">SignUp!</button>
+        <div class="back">
+          <button type="button" name="back" class="back-btn" id="back-btn-signup">Back</button>
+        </div>
+      </div>
+      <div id="login" class="hidden">
+        <input type="text" name="email" placeholder="email" id="login-e">
+        <input type="password" name="password" id="login-pw">
+        <button type="button" name="login" id="login-verify">Login!</button>
+        <div class="back">
+          <button type="button" name="back" class="back-btn" id="back-btn-login">Back</button>
+        </div>
+        <div id="messages">
+
+        </div>
+      </div>
+      <div id="welcome" class="hidden">
+        <h4 id="welcome">Welcome <span id="user"></span></h4>
+        <button type="button" name="logout" id="logout-btn">Logout</button>
+      </div>
+    </div>
+    <script src="login.js" charset="utf-8"></script>
+  </body>
+</html>
